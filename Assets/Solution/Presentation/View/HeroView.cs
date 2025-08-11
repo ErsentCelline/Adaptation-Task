@@ -4,7 +4,7 @@ using Presentation.View.Interfaces;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Presentation
+namespace Presentation.View
 {
     [RequireComponent(typeof(UIDocument))]
     public class HeroView : MonoBehaviour, IHeroView
