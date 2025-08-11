@@ -1,0 +1,52 @@
+Button {
+    transition-property: scale;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out-bounce;
+    scale: 1 1;
+    background-image: url("project://database/Assets/TWD/FreeButtonSet/Textures/buttons/button_100.png?fileID=2800000&guid=de104d32a95556349875721f3a1b1e55&type=3#button_100");
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(255, 255, 255, 0);
+    height: initial;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+Button:hover {
+    scale: 1.1 1.1;
+    transition-property: scale;
+    transition-duration: 0.15s;
+}
+
+ProgressBar {
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/TWD/FreeButtonSet/Fonts/Poppins-Bold.ttf?fileID=12800000&guid=f4c99a340a6e6504aa6e992b7a253612&type=3#Poppins-Bold");
+    font-size: 16px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.unity-progress-bar__background {
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0);
+    background-color: rgb(103, 103, 103);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.unity-progress-bar__progress {
+    -unity-background-image-tint-color: rgb(248, 248, 248);
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
