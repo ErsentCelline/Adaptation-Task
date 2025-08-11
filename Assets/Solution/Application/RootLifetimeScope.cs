@@ -21,13 +21,13 @@ namespace Application
             builder.RegisterMessageBroker<ExperienceChangedMessage>(options);
             builder.RegisterMessageBroker<LevelUpMessage>(options);
             
+            builder.RegisterComponentInHierarchy<HeroView>().As<IHeroView>();
+            
+            builder.RegisterEntryPoint<AddExperienceUseCase>();
             builder.Register<ILevelModel, LevelModel>(Lifetime.Singleton);
             builder.Register<HeroModel>(Lifetime.Singleton);
-
-            builder.Register<AddExperienceUseCase>(Lifetime.Singleton);
+            
             builder.RegisterEntryPoint<HeroPresenter>();
-
-            builder.RegisterComponentInHierarchy<HeroView>().As<IHeroView>();
         }
     }
 }

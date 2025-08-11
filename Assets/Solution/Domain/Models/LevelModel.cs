@@ -18,8 +18,10 @@ namespace Domain.Models
             IPublisher<ExperienceChangedMessage> expPublisher,
             IPublisher<LevelUpMessage> levelUpPublisher)
         {
+            Debug.Log("LevelModel created");
+            
             _currentLevel = new ReactiveProperty<int>(1).AddTo(_disposables);
-            _currentExperience = new ReactiveProperty<int>(0).AddTo(_disposables);
+            _currentExperience = new ReactiveProperty<int>(20).AddTo(_disposables);
             _requiredExperience = new ReactiveProperty<int>(100).AddTo(_disposables);
             
             _currentLevel.Subscribe(level => levelUpPublisher.Publish(
