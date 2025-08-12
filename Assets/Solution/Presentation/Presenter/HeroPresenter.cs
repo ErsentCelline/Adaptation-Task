@@ -1,5 +1,5 @@
 using System;
-using Domain.EventData;
+using EventData;
 using UnityEngine.UIElements;
 using MessagePipe;
 using Presentation.View.Interfaces;

@@ -8,5 +8,6 @@ namespace Domain.Models
             => LevelModel = levelModel;
         
         public ILevelModel LevelModel { get; }
+        public IStatsModel StatsModel { get; }
     }
 }
