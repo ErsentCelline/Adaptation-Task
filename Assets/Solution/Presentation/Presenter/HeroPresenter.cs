@@ -1,10 +1,9 @@
 using System;
-using Domain.EventData;
+using EventData;
 using UnityEngine.UIElements;
 using MessagePipe;
 using Presentation.View.Interfaces;
 using UniRx;
-using UnityEngine;
 using VContainer.Unity;
 
 namespace Presentation.Presenter
@@ -48,8 +47,6 @@ namespace Presentation.Presenter
 
         private void OnClickAddExp(ClickEvent clickEvent)
         {
-            Debug.Log("Presenter callback");
-            
             _requestExperiencePublisher.Publish(new AddExperienceMessage(_defaultExperienceAmount));
         }
 

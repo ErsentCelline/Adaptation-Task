@@ -1,12 +1,13 @@
-using Domain.EventData;
+using Domain.Interfaces;
 
 namespace Domain.Models
 {
-    public class HeroModel
+    public class HeroModel : IHeroModel
     {
         public HeroModel(LevelModel levelModel)
-            => Level = levelModel;
+            => LevelModel = levelModel;
         
-        public LevelModel Level { get; private set; }
+        public ILevelModel LevelModel { get; }
+        public IStatsModel StatsModel { get; }
     }
 }

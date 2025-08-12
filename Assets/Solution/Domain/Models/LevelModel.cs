@@ -1,4 +1,4 @@
-using Domain.EventData;
+using EventData;
 using Domain.Interfaces;
 using MessagePipe;
 using UniRx;
